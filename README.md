@@ -2,7 +2,7 @@
 A complete project of provisioning an EKS cluster, containerizing a Flask app, and automating deployment via GitHub Actions.
 
 ## Directory arch
-`
+```
 .
 ├── app.py
 ├── requirements.txt
@@ -15,7 +15,7 @@ A complete project of provisioning an EKS cluster, containerizing a Flask app, a
 └── .github/
     └── workflows/
         └── deploy.yml
-`
+```
 
 ## Installing Terraform (Step-1)
 
@@ -35,4 +35,8 @@ Create ECR Repositary names 'flask-app' in AWS.
 
 ## Deploy code to github and Github actions
 
-The local folder where you contain the clone of this repositary to be pushed to github, go to `Actions` tab: create a deploy.yaml file paste the code for Github actions to deploy to eks automatically. Before that go to settings of that repositary and at secret sections, add your AWS_ACCESS_KEY_SECRET & AWS_SECRET_ACCESS_KEY to the secrets.
+In the local folder containing the cloned repository, go to the Actions tab on GitHub. Create a deploy.yml file and paste the workflow code to deploy to EKS automatically. Before running the workflow, go to the repository settings and add your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in the Secrets section.
+
+## Conclusion
+
+There were some issues in the code provided by Kubenine. To simplify, there were two errors. Once these are resolved, the project will succeed.
