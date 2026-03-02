@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: ECR_REGISTRY_URL/flask-app:{{ IMAGE_TAG_URL }}
+          image: ECR_REGISTRY_URL/flask-app:IMAGE_TAG_URL
           ports:
             - containerPort: 5000
 ---
