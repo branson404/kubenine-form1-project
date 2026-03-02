@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: ${{ ECR_REGISTRY }}/flask-app:${{ IMAGE_TAG }}
+          image: nginx
           ports:
             - containerPort: 5000
 ---
