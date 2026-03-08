@@ -41,6 +41,7 @@ jobs:
           aws eks update-kubeconfig --name $EKS_CLUSTER --region $AWS_REGION
           aws sts get-caller-identity
 
+      #test
       - name: Deploy to EKS
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
